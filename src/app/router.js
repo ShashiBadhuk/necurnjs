@@ -23,7 +23,8 @@
     },
     routes: {
       "home": defaultCntrl.homeView,
-      "test": defaultCntrl.foo,
+      "features": defaultCntrl.showFeaturesView,
+      "about": defaultCntrl.showAboutView,
       "docs/intro": docsCntrl.showDocsIntro,
       "docs/overview": docsCntrl.showDocsOverview,
       "docs/app": docsCntrl.showDocsApp,
@@ -33,7 +34,6 @@
       "docs/model": docsCntrl.showDocsModel,
       "docs/template": docsCntrl.showDocsTemplate,
       "docs/example": docsCntrl.showDocsExample,
-      "docs/help": docsCntrl.showDocsHelp,
       "docs": docsCntrl.showDocsIntro
     },
     notFound: defaultCntrl.view404

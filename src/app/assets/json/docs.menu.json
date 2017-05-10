@@ -27,10 +27,7 @@
     "text": "Examples",
     "link": "/#/docs/example"
   }, {
-    "text": "Help",
-    "link": "/#/docs/help"
-  }, {
     "text": "Report an Issue",
-    "link": "https://github.com"
+    "link": "https://github.com/ShashiBadhuk/necurnjs/issues"
   }]
 }

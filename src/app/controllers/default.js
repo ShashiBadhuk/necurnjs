@@ -4,8 +4,11 @@
   var appLayout = require('./../templates/app.layout.tpl');
   var indexTpl = require('./../templates/index.tpl');
   var homeViewTpl = require('./../templates/home.view.tpl');
+  var featuresViewTpl = require('./../templates/features.view.tpl');
+  var featuresData = require('./../assets/json/features.json');
   var viewNotFoundTpl = require('./../templates/view404.tpl');
-
+  var aboutViewTpl = require('./../templates/about.view.tpl');
+  var actionCntrls = require('./actionCntrl');
 
   var defaultCntrl = new Necurn.Controller({
     layout: appLayout,
@@ -13,8 +16,19 @@
     regions: {
       'primary': '.primary',
       'secondary': '.secondary',
-      'mainView': '.primary .mainView'
+      'mainView': '.primary .mainView',
+      'introView': '.primary .mainView .introView',
+      'featuresView': '.primary .mainView .featuresView'
     },
+    events: [{
+      type: "click",
+      selector: '.intro-action .btn-default',
+      handler: actionCntrls.onViewDoc
+    }, {
+      type: "click",
+      selector: '.intro-action .btn-primary',
+      handler: actionCntrls.onDownload
+    }],
     init: function() {
       console.log("controller is called");
     },
@@ -23,7 +37,36 @@
       var mainView = new Necurn.View({
         template: homeViewTpl
       });
-      defaultCntrl.render(defaultCntrl.regions.mainView, mainView);
+      defaultCntrl.render(defaultCntrl.regions.introView, mainView);
+
+      var featuresModel = new Necurn.Model({
+        data: featuresData,
+        subModel: "items"
+      });
+      var featuresView = new Necurn.View({
+        template: featuresViewTpl,
+        model: featuresModel
+      });
+      defaultCntrl.render(defaultCntrl.regions.featuresView, featuresView);
+    },
+    showFeaturesView: function() {
+      defaultCntrl.initLayout();
+      var featuresModel = new Necurn.Model({
+        data: featuresData,
+        subModel: "items"
+      });
+      var featuresView = new Necurn.View({
+        template: featuresViewTpl,
+        model: featuresModel
+      });
+      defaultCntrl.render(defaultCntrl.regions.mainView, featuresView);
+    },
+    showAboutView: function() {
+      defaultCntrl.initLayout();
+      var aboutView = new Necurn.View({
+        template: aboutViewTpl,
+      });
+      defaultCntrl.render(defaultCntrl.regions.mainView, aboutView);
     },
     gettingStarted: function() {
       console.log("Getting Started View");

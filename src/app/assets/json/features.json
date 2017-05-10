@@ -1,0 +1,21 @@
+{
+  "items": [{
+    "title": "MVC Architecture",
+    "contents": "NecurnJS is a lightweight javascript MVC framework, which provides router and templating engine too. It is easy and quick adoptable by any javascript application."
+  }, {
+    "title": "Necurn Router",
+    "contents": "Necurn Router is powerful and configurable to makes the application rich. It solves all your routing problems. you can easily configure it with the rich options available. "
+  }, {
+    "title": "Necurn Templates",
+    "contents": "NecurnJS provides lightweight, fast & powerful templating engine with flexible features. It can easily compile and embedded with the dynamic views."
+  }, {
+    "title": "Controllers & Views",
+    "contents": "NecurnJS is a lightweight javascript MVC framework, which provides router and templating engine too. It is easy and quick adoptable by any javascript application"
+  }, {
+    "title": "Necurn Events",
+    "contents": "NecurnJS is a lightweight javascript MVC framework, which provides router and templating engine too. It is easy and quick adoptable by any javascript application"
+  }, {
+    "title": "Necurn Utilities",
+    "contents": "NecurnJS is a lightweight javascript MVC framework, which provides router and templating engine too. It is easy and quick adoptable by any javascript application"
+  }]
+}

@@ -75,7 +75,7 @@ p {
 }
 
 .footer {
-  background-color: #2b2b2b;
+  background-color: #121212;
   width: 100%;
   height: auto;
   overflow: hidden;
@@ -106,13 +106,20 @@ p {
   font-family: 'News Cycle', sans-serif;
 }
 
+.footer .copyright a {
+  font-family: 'News Cycle', sans-serif;
+  text-decoration: none;
+  color: #777;
+  padding-bottom: 10px;
+}
+
 .container {
   min-height: 520px;
   color: #525252;
 }
 
 .primary .mainView .introView {
-  background-color: #2b2b2b;
+  background-color: #121212;
   height: 320px;
 }
 
@@ -142,18 +149,21 @@ p {
 }
 
 .primary .featuresView {
-  padding: 30px;
+  padding: 20px;
+  min-height: 520px;
 }
 
 .primary .featuresView .features {
-  width: 45%;
-  padding: 20px;
+  width: 43%;
+  padding: 30px;
   color: #2b2b2b;
 }
 
 .primary .featuresView .features h5 {
   font-family: 'Scada', sans-serif;
   text-transform: uppercase;
+  padding: 10px 0px;
+  font-size: 16px;
 }
 
 .btn {
@@ -166,6 +176,7 @@ p {
   font-size: 16px;
   cursor: pointer;
   margin: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.51);
 }
 
 .btn-default {
@@ -173,7 +184,7 @@ p {
 }
 
 .btn-default:hover {
-  background-color: #3594c5;
+  background-color: #0079b7;
 }
 
 .btn-primary {
@@ -181,7 +192,7 @@ p {
 }
 
 .btn-primary:hover {
-  background-color: #4CAF50;
+  background-color: #348837;
 }
 
 .page404 {
@@ -226,7 +237,7 @@ p {
   left: 0;
   width: 220px;
   float: left;
-  background-color: #3594c5;
+  background-color: #2b2b2b;
   /* Black*/
   overflow-x: hidden;
   /* Disable horizontal scroll */
@@ -245,7 +256,7 @@ p {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 20px;
-  color: #3a3a3a;
+  color: #aaa;
   display: block;
   transition: 0.3s;
   font-family: 'Alegreya', sans-serif;
@@ -257,7 +268,7 @@ p {
 .drawerMenu .sidenav a:hover,
 .drawerMenu .offcanvas a:focus {
   color: #f1f1f1;
-  background-color: #2b2b2b;
+  background-color: #3594c5;
 }
 
 .drawerMenu .sidenav a.focus {
@@ -273,7 +284,7 @@ p {
 
 .docContents:after {
   width: 220px;
-  background-color: #3594c5;
+  background-color: #2b2b2b;
   position: absolute;
   left: -220px;
   top: 0;
@@ -297,7 +308,7 @@ p {
   color: #bec3c5;
   font-size: 16px;
   padding: 5px;
-  overflow: scoll;
+  overflow: scroll;
 }
 
 .docContents .necurn-gst .nc-install ul {
@@ -309,4 +320,52 @@ p {
 .docContents .necurn-overview .necurn-arch-image {
   text-align: center;
   padding: 25px;
+}
+
+.primary .mainView .aboutView {
+  padding: 100px;
+  color: #121212;
+  font-family: 'Alegreya', sans-serif;
+}
+
+.primary .mainView .aboutView h3 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 36px;
+  padding-bottom: 10px;
+}
+
+.primary .mainView .aboutView span {
+  font-family: 'Scada', sans-serif;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.primary .mainView .aboutView p {
+  font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.primary .mainView .aboutView li {
+  list-style: none;
+  padding: 10px;
+  float: left;
+  cursor: pointer;
+}
+
+.necurn-example .file-index:before,
+.necurn-example .file-appjs:before {
+  background-color: #b0b0b0;
+  color: #2b2b2b;
+  padding: 5px;
+  z-index: 10;
+}
+
+.necurn-example .file-index:before {
+  content: 'index.html';
+}
+
+.necurn-example .file-appjs:before {
+  content: 'app.js';
 }

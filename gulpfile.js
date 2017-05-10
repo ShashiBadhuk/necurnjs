@@ -119,6 +119,7 @@ var Necurn = {
         this.emit('end');
       }))
       .pipe(gulp.dest('./lib/'))
+      .pipe(gulp.dest('./build/assets/js/'))
       .pipe(reload({ "stream": true }));
 
   },
