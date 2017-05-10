@@ -8,7 +8,7 @@ CONTENTS
 ---------
 
  * Why NecurnJS
- * Configuration and installation
+ * Installation
  * Documentation
 
 Why NecurnJS
@@ -19,14 +19,14 @@ Stop spending more time thinking about your framework than your app. NecurnJS wi
 NecurnJS is a lightweight javascript MVC framework for dynamic web apps. It provides MVC architecture with routing and templates and lets you extend HTML's syntax to make your DOM clear and powerfull. NecurnJS provides Navigation, Event, Controller, Utility, Router and New Views.
 
 
-CONFIGURATION AND INSTALLATION
+Installation
 -------------------------------
 
-Using Node
-`` npm install necurnjs --save``
+Using Node  
+  <code>npm install necurnjs --save</code>
 
-Using Script Tag
-``<script type="text/javascript" src="./necurn.min.js"></script>``
+Using Script Tag  
+  <code><script type="text/javascript" src="./necurn.min.js"></script></code>
 
 
 Documentation
