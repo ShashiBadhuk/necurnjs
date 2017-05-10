@@ -1,0 +1,36 @@
+{
+  "items": [{
+    "text": "Getting Started",
+    "link": "/#/docs/intro"
+  }, {
+    "text": "Overview",
+    "link": "/#/docs/overview"
+  }, {
+    "text": "Application",
+    "link": "/#/docs/app"
+  }, {
+    "text": "Router",
+    "link": "/#/docs/router"
+  }, {
+    "text": "Controller",
+    "link": "/#/docs/controller"
+  }, {
+    "text": "View",
+    "link": "/#/docs/view"
+  }, {
+    "text": "Model",
+    "link": "/#/docs/model"
+  }, {
+    "text": "Template",
+    "link": "/#/docs/template"
+  }, {
+    "text": "Examples",
+    "link": "/#/docs/example"
+  }, {
+    "text": "Help",
+    "link": "/#/docs/help"
+  }, {
+    "text": "Report an Issue",
+    "link": "https://github.com"
+  }]
+}

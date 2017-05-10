@@ -1,0 +1,312 @@
+body {
+  background-color: #eee;
+  color: #ddd;
+  margin: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.header {
+  background-color: #dff1f0;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-bottom: 1px solid #bed8e6;
+}
+
+.header .logo {
+  width: 90px;
+  padding-top: 8px;
+  padding-left: 32px;
+}
+
+.header ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+.header li {
+  list-style: none;
+  text-align: center;
+  float: left;
+}
+
+.header li a {
+  text-decoration: none;
+  color: #575959;
+  padding: 25px 20px;
+  display: block;
+  font-family: arial;
+}
+
+.header li a:hover {
+  background-color: #3594c5;
+  cursor: pointer;
+  color: #fff;
+}
+
+.footer {
+  background-color: #2b2b2b;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-bottom: 1px solid #bed8e6;
+}
+
+.footer ul {}
+
+.footer li {
+  list-style: none;
+  text-align: center;
+  float: left;
+}
+
+.footer li a {
+  text-decoration: none;
+  color: #999;
+  padding: 25px 20px;
+  display: block;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.footer .copyright {
+  clear: both;
+  text-align: center;
+  padding-bottom: 10px;
+  color: #777;
+  font-family: 'News Cycle', sans-serif;
+}
+
+.container {
+  min-height: 520px;
+  color: #525252;
+}
+
+.primary .mainView .introView {
+  background-color: #2b2b2b;
+  height: 320px;
+}
+
+.primary .mainView .introView .intro {
+  margin: 0px auto;
+  width: 80%;
+  padding-top: 48px;
+  color: #ccc;
+}
+
+.primary .mainView .introView .intro h3 {
+  padding: 10px;
+  font-size: 42px;
+  font-family: 'Quicksand', sans-serif;
+  color: #eee;
+}
+
+.primary .mainView .introView .intro span {
+  padding: 12px;
+  text-transform: uppercase;
+  font-family: 'News Cycle', sans-serif;
+}
+
+.primary .mainView .introView .intro p {
+  padding: 12px;
+  font-family: 'Alegreya', sans-serif;
+}
+
+.primary .featuresView {
+  padding: 30px;
+}
+
+.primary .featuresView .features {
+  width: 45%;
+  padding: 20px;
+  color: #2b2b2b;
+}
+
+.primary .featuresView .features h5 {
+  font-family: 'Scada', sans-serif;
+  text-transform: uppercase;
+}
+
+.btn {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.btn-default {
+  background-color: #3594c5;
+}
+
+.btn-default:hover {
+  background-color: #3594c5;
+}
+
+.btn-primary {
+  background-color: #4CAF50;
+}
+
+.btn-primary:hover {
+  background-color: #4CAF50;
+}
+
+.page404 {
+  text-align: center;
+  padding: 60px;
+  color: #3594c5;
+  background-color: #ccc;
+}
+
+.page404 h3 {
+  padding: 20px;
+  font-size: 40px;
+  font-family: 'Alegreya', sans-serif;
+}
+
+.page404 .errorCode {
+  font-size: 136px;
+  padding: 20px;
+  font-family: 'Quicksand', sans-serif;
+  padding-bottom: 48px;
+}
+
+.page404 .errorMsg {
+  font-size: 24px;
+  padding: 24px 154px;
+  font-family: Quicksand, sans-serif;
+  color: #2b2b2b;
+  text-align: center;
+}
+
+.page404 .errorMsg a {
+  cursor: pointer;
+}
+
+
+/* The side navigation menu */
+
+.drawerMenu .sidenav {
+  z-index: 10;
+  /* Stay on top */
+  top: 0;
+  left: 0;
+  width: 220px;
+  float: left;
+  background-color: #3594c5;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
+  min-height: 580px;
+  position: relative;
+}
+
+
+/* The navigation menu links */
+
+.drawerMenu .sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #3a3a3a;
+  display: block;
+  transition: 0.3s;
+  font-family: 'Alegreya', sans-serif;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.drawerMenu .sidenav a:hover,
+.drawerMenu .offcanvas a:focus {
+  color: #f1f1f1;
+  background-color: #2b2b2b;
+}
+
+.drawerMenu .sidenav a.focus {
+  color: #2b2b2b;
+  background-color: #eeeeee;
+}
+
+.docContents {
+  padding: 40px;
+  margin-left: 220px;
+  position: relative;
+}
+
+.docContents:after {
+  width: 220px;
+  background-color: #3594c5;
+  position: absolute;
+  left: -220px;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  content: '';
+}
+
+.docContents h3 {
+  padding: 30px 10px 5px 10px;
+  font-family: 'Scada', sans-serif;
+}
+
+.docContents p {
+  padding: 5px 10px;
+  font-family: 'Alegreya', sans-serif;
+}
+
+.code-view {
+  background-color: #2b2b2b;
+  color: #bec3c5;
+  font-size: 16px;
+  padding: 5px;
+  overflow: scoll;
+}
+
+.docContents .necurn-gst .nc-install ul {
+  list-style: none;
+  padding: 30px;
+  font-family: 'Scada', sans-serif;
+}
+
+.docContents .necurn-overview .necurn-arch-image {
+  text-align: center;
+  padding: 25px;
+}
